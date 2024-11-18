@@ -1,0 +1,34 @@
+2024-11-07T05:39:25+00:00 CRITICAL syntax error, unexpected token "echo"의 C:\wamp64\www\wordpress\wp-content\themes\twentytwentyfour\functions.php 라인 272에 있습니다.
+
+2024-11-07T05:39:33+00:00 CRITICAL syntax error, unexpected token "echo"의 C:\wamp64\www\wordpress\wp-content\themes\twentytwentyfour\functions.php 라인 272에 있습니다.
+
+2024-11-08T11:26:43+09:00 CRITICAL syntax error, unexpected single-quoted string " . </div>"의 C:\wamp64\www\wordpress\wp-content\themes\twentytwentyfour\functions.php 라인 494에 있습니다.
+
+2024-11-08T11:26:44+09:00 CRITICAL syntax error, unexpected single-quoted string " . </div>"의 C:\wamp64\www\wordpress\wp-content\themes\twentytwentyfour\functions.php 라인 494에 있습니다.
+
+2024-11-08T11:27:32+09:00 CRITICAL syntax error, unexpected single-quoted string " . </div>"의 C:\wamp64\www\wordpress\wp-content\themes\twentytwentyfour\functions.php 라인 494에 있습니다.
+
+2024-11-08T11:40:03+09:00 CRITICAL Uncaught ValueError: Path cannot be empty in C:\wamp64\www\wordpress\wp-includes\media.php:5529
+Stack trace:
+#0 C:\wamp64\www\wordpress\wp-includes\media.php(5529): getimagesize('')
+#1 C:\wamp64\www\wordpress\wp-admin\includes\image.php(1067): wp_getimagesize(NULL)
+#2 C:\wamp64\www\wordpress\wp-admin\includes\image.php(558): file_is_displayable_image(NULL)
+#3 C:\wamp64\www\wordpress\wp-content\themes\twentytwentyfour\functions.php(263): wp_generate_attachment_metadata(105, NULL)
+#4 C:\wamp64\www\wordpress\wp-includes\shortcodes.php(434): custom_image_post_form(Array, '', 'image_post_form')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\wamp64\www\wordpress\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(image_...', 'do_shortcode_ta...', '[image_post_for...')
+#7 C:\wamp64\www\wordpress\wp-includes\class-wp-hook.php(324): do_shortcode('[image_post_for...')
+#8 C:\wamp64\www\wordpress\wp-includes\plugin.php(205): WP_Hook->apply_filters('[image_post_for...', Array)
+#9 C:\wamp64\www\wordpress\wp-includes\blocks\post-content.php(50): apply_filters('the_content', '<!-- wp:shortco...')
+#10 C:\wamp64\www\wordpress\wp-includes\class-wp-block.php(519): render_block_core_post_content(Array, '<!-- wp:shortco...', Object(WP_Block))
+#11 C:\wamp64\www\wordpress\wp-includes\class-wp-block.php(499): WP_Block->render()
+#12 C:\wamp64\www\wordpress\wp-includes\blocks.php(2061): WP_Block->render()
+#13 C:\wamp64\www\wordpress\wp-includes\blocks.php(2113): render_block(Array)
+#14 C:\wamp64\www\wordpress\wp-includes\block-template.php(260): do_blocks('<!-- wp:templat...')
+#15 C:\wamp64\www\wordpress\wp-includes\template-canvas.php(12): get_the_block_template_html()
+#16 C:\wamp64\www\wordpress\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\w...')
+#17 C:\wamp64\www\wordpress\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\w...')
+#18 C:\wamp64\www\wordpress\index.php(17): require('C:\\wamp64\\www\\w...')
+#19 {main}
+  thrown의 C:\wamp64\www\wordpress\wp-includes\media.php 라인 5529에 있습니다.
+
